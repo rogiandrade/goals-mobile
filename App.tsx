@@ -17,7 +17,7 @@ export default function App() {
     Inter_800ExtraBold,
   });
 
-  if (fontsLoaded) {
+  if (!fontsLoaded) {
     return <Loading />;
   }
 
