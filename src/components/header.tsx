@@ -1,9 +1,13 @@
-import { View, Text } from "react-native-reanimated/lib/typescript/Animated";
+import {
+  View,
+  Text,
+  Image,
+} from "react-native-reanimated/lib/typescript/Animated";
 import { Feather } from "@expo/vector-icons";
 import colors from "tailwindcss/colors";
 import { useNavigation } from "@react-navigation/native";
 
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logoGoals.png";
 import { TouchableOpacity } from "react-native";
 
 export function Header() {
@@ -11,7 +15,7 @@ export function Header() {
 
   return (
     <View className="w-full flex-row items-center justify-between">
-      <Logo />
+      <Image source={Logo} />
 
       <TouchableOpacity
         activeOpacity={0.7}
